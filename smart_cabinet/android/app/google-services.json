@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "897226355901",
+    "project_id": "smart-cabinet-3dca8",
+    "storage_bucket": "smart-cabinet-3dca8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897226355901:android:8b40aca1579d936622b3d4",
+        "android_client_info": {
+          "package_name": "com.example.smart_cabinet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBctEZrkWBuzZcLgJ20Ur3ifi-omFcdwyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

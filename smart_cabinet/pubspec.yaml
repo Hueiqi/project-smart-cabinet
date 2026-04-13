@@ -1,0 +1,46 @@
+name: smart_cabinet
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # HTTP client for API calls
+  http: ^1.2.0
+  # Load environment variables from .env file
+  flutter_dotenv: ^5.1.0
+  # Cupertino icons for iOS style
+  cupertino_icons: ^1.0.8
+  # Firebase core
+  firebase_core: ^4.6.0
+  # Firebase authentication
+  firebase_auth: ^6.3.0
+  # Google Gemini AI (optional – you may not need it if using Hugging Face)
+  google_generative_ai: ^0.4.7
+  # Cloud Firestore
+  cloud_firestore: ^6.2.0
+  flutter_local_notifications: ^21.0.0
+  timezone: ^0.11.0
+  # Hive local database
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.4.0
+  hive_generator: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Add assets folder – include your .env file
+  assets:
+    - .env
