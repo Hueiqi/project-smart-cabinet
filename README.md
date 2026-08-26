@@ -179,7 +179,6 @@ flutter pub run build_runner watch      # Watch for changes
 
 ### Running on Different Platforms
 ```bash
-flutter run -d ios                      # iOS
 flutter run -d android                  # Android
 ```
 
