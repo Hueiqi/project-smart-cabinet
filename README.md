@@ -1,16 +1,17 @@
-# Smart Cabinet
+# Smart Cabinet - Demo Application
 
-A Flutter-based intelligent cabinet management system that combines mobile app development with cloud-based services to provide smart inventory tracking, organization, and retrieval capabilities.
+A Flutter-based demonstration application for the Smart Cabinet IoT system. This app enables IoT devices and systems to connect to and interact with a smart cabinet interface.
 
 ## 📋 Overview
 
-Smart Cabinet is a comprehensive solution designed to help users manage their personal or organizational inventory with ease. The system leverages modern technologies including:
+Smart Cabinet is a comprehensive IoT-enabled inventory management system designed to help users manage their personal or organizational items with ease. The system leverages modern technologies including:
 
-- **Flutter** for cross-platform mobile development (iOS, Android, macOS, Web)
+- **Flutter** for cross-platform mobile development (iOS, Android)
 - **Firebase** for authentication and real-time database management
 - **AI/ML Integration** with Google Gemini for intelligent item categorization and recommendations
 - **Local Storage** using Hive for offline-first functionality
 - **Push Notifications** for timely alerts and reminders
+- **IoT Connectivity** for seamless device integration
 
 ## 🎯 Key Features
 
@@ -20,7 +21,8 @@ Smart Cabinet is a comprehensive solution designed to help users manage their pe
 - **User Authentication**: Secure sign-up and login with Firebase Authentication
 - **Local Notifications**: Push notifications for item expiry, low stock, or custom reminders
 - **Offline Support**: Full functionality with offline access using Hive local database
-- **Cross-Platform**: Works seamlessly on iOS, Android, macOS, and Web
+- **IoT Device Integration**: Connect and manage IoT devices to control and monitor cabinet
+- **Cross-Platform**: Works seamlessly on iOS and Android
 
 ## 🛠️ Technology Stack
 
@@ -37,10 +39,27 @@ Smart Cabinet is a comprehensive solution designed to help users manage their pe
 - **Google Gemini API**: AI-powered item categorization and smart suggestions
 
 ### Native Integrations
-- **Swift**: macOS native modules (1.4%)
+- **Swift**: iOS native modules (1.4%)
 - **C++**: Performance-critical operations (3.3%)
 - **CMake**: Build system (5.3%)
 - **C**: Low-level utilities (0.4%)
+
+## 🌐 IoT Integration
+
+This application serves as a demo platform for IoT smart cabinet systems. Owners can configure and connect their own IoT systems to this application:
+
+### IoT Capabilities
+- **Device Connection**: Connect IoT sensors and controllers to the app
+- **Real-time Control**: Remotely operate cabinet hardware (locks, lighting, displays)
+- **Sensor Monitoring**: Track temperature, humidity, motion, and other environmental conditions
+- **Custom Integration**: Flexible API endpoints for third-party IoT systems
+- **Automation**: Create rules and automations based on cabinet state and user actions
+
+### Getting Started with IoT
+- Configure your IoT devices with the system credentials
+- Connect devices through the Settings > IoT Devices menu
+- Monitor device status and configure automations
+- Receive real-time notifications from connected devices
 
 ## 📦 Dependencies
 
@@ -106,11 +125,12 @@ smart_cabinet/
 │   ├── services/                 # Business logic & API services
 │   │   ├── firebase_service.dart
 │   │   ├── gemini_service.dart
-│   │   └── notification_service.dart
+│   │   ├── notification_service.dart
+│   │   └── iot_service.dart
 │   └── utils/                    # Utility functions
 ├── pubspec.yaml                  # Dart dependencies
 ├── pubspec.lock                  # Locked dependency versions
-└── macos/                        # macOS-specific code
+└── ios/                          # iOS-specific code
 ```
 
 ## 🔐 Authentication & Security
@@ -133,6 +153,7 @@ Push notifications powered by `flutter_local_notifications`:
 - Item expiry reminders
 - Low inventory alerts
 - Custom user reminders
+- IoT device status alerts
 - Timezone-aware scheduling
 
 ## 📊 Local Database (Hive)
@@ -160,8 +181,6 @@ flutter pub run build_runner watch      # Watch for changes
 ```bash
 flutter run -d ios                      # iOS
 flutter run -d android                  # Android
-flutter run -d macos                    # macOS
-flutter run -d chrome                   # Web
 ```
 
 ## 📝 License
@@ -175,7 +194,7 @@ This project is currently unlicensed. See the repository for more details.
 ## 📅 Project Info
 
 - **Created**: April 12, 2026
-- **Last Updated**: April 13, 2026
+- **Last Updated**: August 26, 2026
 - **Repository**: [project-smart-cabinet](https://github.com/Hueiqi/project-smart-cabinet)
 - **Visibility**: Public
 
