@@ -1,17 +1,16 @@
 # Smart Cabinet - Demo Application
 
-A Flutter-based demonstration application for the Smart Cabinet IoT system. This app enables IoT devices and systems to connect to and interact with a smart cabinet interface.
+A Flutter-based demonstration application for inventory management. This is a demo app showcasing a smart cabinet interface for managing personal or organizational items.
 
 ## 📋 Overview
 
-Smart Cabinet is a comprehensive IoT-enabled inventory management system designed to help users manage their personal or organizational items with ease. The system leverages modern technologies including:
+Smart Cabinet is a demonstration app designed to help users manage their personal or organizational items with ease. The app uses modern technologies including:
 
-- **Flutter** for cross-platform mobile development (iOS, Android)
+- **Flutter** for cross-platform mobile development (Android)
 - **Firebase** for authentication and real-time database management
 - **AI/ML Integration** with Google Gemini for intelligent item categorization and recommendations
 - **Local Storage** using Hive for offline-first functionality
 - **Push Notifications** for timely alerts and reminders
-- **IoT Connectivity** for seamless device integration
 
 ## 🎯 Key Features
 
@@ -21,8 +20,7 @@ Smart Cabinet is a comprehensive IoT-enabled inventory management system designe
 - **User Authentication**: Secure sign-up and login with Firebase Authentication
 - **Local Notifications**: Push notifications for item expiry, low stock, or custom reminders
 - **Offline Support**: Full functionality with offline access using Hive local database
-- **IoT Device Integration**: Connect and manage IoT devices to control and monitor cabinet
-- **Cross-Platform**: Works seamlessly on iOS and Android
+- **Android Only**: Optimized for Android platform
 
 ## 🛠️ Technology Stack
 
@@ -38,28 +36,10 @@ Smart Cabinet is a comprehensive IoT-enabled inventory management system designe
   - Firebase Core
 - **Google Gemini API**: AI-powered item categorization and smart suggestions
 
-### Native Integrations
-- **Swift**: iOS native modules (1.4%)
-- **C++**: Performance-critical operations (3.3%)
+### Build System
 - **CMake**: Build system (5.3%)
+- **C++**: Performance-critical operations (3.3%)
 - **C**: Low-level utilities (0.4%)
-
-## 🌐 IoT Integration
-
-This application serves as a demo platform for IoT smart cabinet systems. Owners can configure and connect their own IoT systems to this application:
-
-### IoT Capabilities
-- **Device Connection**: Connect IoT sensors and controllers to the app
-- **Real-time Control**: Remotely operate cabinet hardware (locks, lighting, displays)
-- **Sensor Monitoring**: Track temperature, humidity, motion, and other environmental conditions
-- **Custom Integration**: Flexible API endpoints for third-party IoT systems
-- **Automation**: Create rules and automations based on cabinet state and user actions
-
-### Getting Started with IoT
-- Configure your IoT devices with the system credentials
-- Connect devices through the Settings > IoT Devices menu
-- Monitor device status and configure automations
-- Receive real-time notifications from connected devices
 
 ## 📦 Dependencies
 
@@ -125,12 +105,11 @@ smart_cabinet/
 │   ├── services/                 # Business logic & API services
 │   │   ├── firebase_service.dart
 │   │   ├── gemini_service.dart
-│   │   ├── notification_service.dart
-│   │   └── iot_service.dart
+│   │   └── notification_service.dart
 │   └── utils/                    # Utility functions
 ├── pubspec.yaml                  # Dart dependencies
 ├── pubspec.lock                  # Locked dependency versions
-└── ios/                          # iOS-specific code
+└── android/                       # Android-specific code
 ```
 
 ## 🔐 Authentication & Security
@@ -153,7 +132,6 @@ Push notifications powered by `flutter_local_notifications`:
 - Item expiry reminders
 - Low inventory alerts
 - Custom user reminders
-- IoT device status alerts
 - Timezone-aware scheduling
 
 ## 📊 Local Database (Hive)
@@ -177,7 +155,7 @@ flutter pub run build_runner build      # One-time build
 flutter pub run build_runner watch      # Watch for changes
 ```
 
-### Running on Different Platforms
+### Running on Android
 ```bash
 flutter run -d android                  # Android
 ```
@@ -207,4 +185,4 @@ For issues, feature requests, or questions, please open an [issue](https://githu
 
 ---
 
-**Note**: This project is actively under development. Features and documentation may be updated regularly.
+**Note**: This project is a demo application and is actively under development. Features and documentation may be updated regularly.
