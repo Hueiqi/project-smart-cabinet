@@ -1,5 +1,5 @@
 name: smart_cabinet
-description: "A new Flutter project."
+description: "A Flutter demo application for inventory management."
 publish_to: 'none'
 
 version: 1.0.0+1
@@ -15,13 +15,13 @@ dependencies:
   http: ^1.2.0
   # Load environment variables from .env file
   flutter_dotenv: ^5.1.0
-  # Cupertino icons for iOS style
+  # Material Design icons
   cupertino_icons: ^1.0.8
   # Firebase core
   firebase_core: ^4.6.0
   # Firebase authentication
   firebase_auth: ^6.3.0
-  # Google Gemini AI (optional – you may not need it if using Hugging Face)
+  # Google Gemini AI for item categorization
   google_generative_ai: ^0.4.7
   # Cloud Firestore
   cloud_firestore: ^6.2.0
